@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-right">
+                <div>
+                    <img src="images/porcentaje.png" alt="logo" id="logo">
+                </div>
+                <h1 class="titulo">Asistente virtual matematico</h1>
+            </div>
+            
+            <div class="navbar-left">
+                    <ul>
+                        <li>
+                            <a href="/main.html">Inicio</a>
+                        </li>
+                    </ul>
+            </div> 
+        </nav>
+    </header>
+    <div class="container-descuentos">
+        <form action="calcular-descuentos" class="calcular-descuentos">
+            <label for="precio_original">ingrese el precio orginal</label>
+            <input type="number" id="precio_original">
+            <label for="descuento">Descuento a Aplicar</label>
+            <input type="number" id="descuento">
+            <label for="cupon">Ingrese cupon</label>
+            <input type="text" id="cupon">
+            <button type="button" class="primary-button button-descuentos" onclick="calcular_precio_descuento()">CALCULAR</button>
+            <p id="result_cupon"></p>
+            <p id="result_price"></p>
+        </form>
+    </div>
+
+    <script src="descuentos.js" ></script>
+</body>
+</html> 

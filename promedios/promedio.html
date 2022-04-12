@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>TALLER 3</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-right">
+                <div>
+                    <img src="images/estadistica.png" alt="logo" id="logo">
+                </div>
+                <h1 class="titulo">Asistente virtual matematico</h1>
+            </div>
+            
+            <div class="navbar-left">
+                    <ul>
+                        <li>
+                            <a href="/main.html">Inicio</a>
+                        </li>
+                    </ul>
+            </div> 
+        </nav>
+    </header>
+    <section class="container-main">
+        <h2>Operaciones basicas de estadistica</h2>
+        <form action="crear_array" class="container-array">
+            <label for="array">Ingrese los datos</label>
+            <input type="text" placeholder="ej: 1,2,3..." id="array">
+        </form>
+        <div class="promedio">
+            <button type="button" class="button-calcular" onclick="calcular_Media()">Calcular media</button>
+            <p id="result_media"></p>
+        </div>
+
+        <div class="mediana">
+            <button type="button" class="button-calcular" onclick="calcular_mediana_button()">Calcular mediana</button>
+            <p id="result_mediana"></p>
+        </div>
+
+        <div class="moda">
+            <button type="button" class="button-calcular" onclick="calcular_moda_button()">Calcular moda</button>
+            <p id="result_moda"></p>
+        </div>
+    </section>
+</body>
+<script src="promedio.js"></script>
+<script src="mediana.js"></script>
+<script src="moda.js"></script>
+
+
+</html>

@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+:root{
+    /*variables de colores establecidas*/
+    --very-light-pink: #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+    --White: #FFFFFF;
+    --Black: #000000:
+    --Dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+/*nav*/
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--Text-input-field);
+    border-bottom: 4px solid var(--very-light-pink);
+    padding-left: 4px;
+    padding-right: 16px;
+}
+
+header .titulo{
+    font-size: 30px;
+    color: var(--Hospital-green);
+    font-weight: bold;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-left ul li a{
+   text-decoration: none;
+   color: var(--very-light-pink) ; 
+   border: 1px solid var(--white);
+   padding: 8px;
+   border-radius: 8px;
+   font-size: var(--lg);
+   font-weight: bold;
+
+}
+.navbar-left ul li a:hover{
+    border: 1px solid var(--Hospital-green);
+    color:var(--Hospital-green);
+  
+}
+.navbar-left ul{
+  list-style: none;   
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+
+
+    
+.container-main{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+.container-array{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-array label{
+    margin-bottom: 12px;
+}
+.container-array input{
+    margin-bottom: 12px;
+}
+
+.container-main .button-calcular{
+    width: 40%;
+    height: 28px;
+    background-color: var(--Hospital-green);
+    border: none;
+    border-radius: 20px;
+    color: var(--White);
+}
+.container-main .button-calcular:hover{
+    cursor: pointer;
+    border: 2px solid green;
+
+}
+.container-array input{
+    color: var(--very-light-pink);
+    font-weight: bold;
+    width: 60%;
+    height: 30px;
+    border:2px solid var(--Hospital-green);
+}
+.container-array input:active{
+    border:2px solid greenyellow;
+}
+
+.promedio,.mediana,.moda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.promedio,.mediana,.moda p{
+    color: var(--Hospital-green);
+    font-size: var(--md);
+    font-weight: bold;
+}

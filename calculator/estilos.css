@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+:root{
+    /*variables de colores establecidas*/
+    --very-light-pink: #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+    --White: #FFFFFF;
+    --Black: #000000:
+    --Dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+
+
+/*nav*/
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--Text-input-field);
+    border-bottom: 4px solid var(--very-light-pink);
+    padding-left: 4px;
+    padding-right: 16px;
+}
+
+header .titulo{
+    font-size: 30px;
+    color: var(--Hospital-green);
+    font-weight: bold;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-left ul li a{
+   text-decoration: none;
+   color: var(--very-light-pink) ; 
+   border: 1px solid var(--white);
+   padding: 8px;
+   border-radius: 8px;
+   font-size: var(--lg);
+   font-weight: bold;
+
+}
+.navbar-left ul li a:hover{
+    border: 1px solid var(--Hospital-green);
+    color:var(--Hospital-green);
+  
+}
+.navbar-left ul{
+  list-style: none;   
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+
+
+
+/*contenedor principal*/
+.container_principal{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-left: 8px;
+}
+
+.container_principal p:nth-child(1){
+    font-size: var(--md);
+    color: var(--Black);
+    font-weight: bold;
+    margin: 30px  0px;
+}
+
+.container_principal p:nth-child(2){
+    font-size: var(--md);
+    color: var(--Black);
+    margin: 30px  0px;
+}
+
+.container_principal .container_button{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+
+.container_principal .container_button .fondo_button{
+margin: 30px 10px 30px 10px;
+background-color: var(--Hospital-green);
+padding: 16px 50px;
+border-radius: 20px;
+}
+
+.container_principal .container_button .fondo_button a{
+ text-decoration: none;
+ color: var(--White);
+}
+
+.container_principal .container_button .fondo_button a:hover{
+    font-weight:bold ;
+    font-size: var(--lg);
+}
+footer span{
+    color: var(--very-light-pink);
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+/*estilos de geometria html*/
+
+.container_geometria{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-left: 8px;
+}
+.container_geometria h2{
+    font-size: var(--lg);
+    color: var(--Black);
+    font-weight: bold;
+    margin: 30px  0px;
+}
+
+.container_geometria p{
+    font-size: var(--sm);
+    color: var(--Black);
+    font-weight: bold;
+    margin: 30px  0px;
+}
+.container_geometria .container_figuras{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+
+.container_geometria .container_figuras .figuras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_geometria .container_figuras .figuras p{
+    margin-bottom:  12px;
+    margin-top: 0;
+    font-size: var(--lg);
+    color: var(--Hospital-green);
+    font-weight: bold;
+}
+
+.container_geometria .container_figuras .figuras form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_geometria .container_figuras .figuras form label{
+    font-size: var(--sm);
+    margin-bottom: 6px;
+}
+
+.container_geometria .container_figuras .figuras form input{
+    font-size: var(--md);
+    margin-bottom: 6px;
+}
+.container_geometria .container_figuras .figuras form .primary_button{
+    font-size: var(--md);
+    margin-bottom: 6px;
+}
+
+
+
+   

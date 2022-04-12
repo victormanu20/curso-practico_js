@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="nav" href="/main.html">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-right">
+                <div>
+                    <img src="images/logo.png" alt="logo" id="logo">
+                </div>
+                <h1 class="titulo">Asistente virtual matematico</h1>
+            </div>
+            
+            <div class="navbar-left">
+                    <ul>
+                        <li>
+                            <a href="/main.html">Inicio</a>
+                        </li>
+                    </ul>
+            </div> 
+        </nav>
+        
+    </header>
+    <section class="container_geometria">
+        <h2>Calculos Geometricos</h2>
+        <p>Te ayudaremos a calcular perimetros y areas de la figuras basicas.</p>
+        <div class="container_figuras">
+            <div class="figuras cuadrado">
+                <p>Cuadrado</p>
+                <form action="cuadrado">
+                    <label for="input_lado">Lado del cuadrado</label>
+                    <input type="number" id="input_lado">
+                    <button type="button" class="primary_button" onclick="calcular_perimetro_cuadrado()">Calcular perimetro</button>
+                    <button type="button" class="primary_button" onclick="calcular_area_cuadrado()">Calculararea</button>
+                    <p id="resultado_cuadrado"></p>
+                </form>
+            </div>
+            <div class="figuras circulo">
+                <p>circulo</p>
+                <form action="Circulo">
+                    <label for="input_radio">Radio del circulo</label>
+                    <input type="number" id="input_radio">
+                    <button type="button" class="primary_button" onclick="calcular_perimetro_circulo()">Calcular perimetro</button>
+                    <button type="button" class="primary_button" onclick="calcular_area_circulo()">Calcular area</button>
+                    <p id="resultado_circulo"></p>
+                </form>
+
+            </div>
+            <div class="figuras triangulo">
+                <p>Triangulo</p>
+                <form action="trinagulo">
+                    <label for="input_ladoA">Lado A del triangulo</label>
+                    <input type="number" id="input_ladoA">
+
+                    <label for="input_ladoB">Lado B del traingulo</label>
+                    <input type="number" id="input_ladoB">
+
+                    <label for="input_base">Base del triangulo</label>
+                    <input type="number" id="input_base">
+
+                    <button type="button" class="primary_button" onclick="calcular_perimetro_triangulo()">Calcular perimetro</button>
+                    <button type="button" class="primary_button" onclick="calcular_area_triangulo()">Calcular area</button>
+                    <p id="resultado_triangulo"></p>
+                </form>
+
+            </div>
+            <div class="figuras rombo">
+                <p>Rombo</p>
+                <form action="">
+                    <label for=""></label>
+                    <input type="text">
+                    <button class="primary_button" onclick="perimetro_tringulo()">Calcular perimetro</button>
+                    <button class="primary_button" onclick="area_tringulo()">Calcular area</button>
+                    <p id="resultado_triangulo"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Creado: Victor Manuel Astudillo</span>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
