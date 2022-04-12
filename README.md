@@ -1,5 +1,6 @@
 # curso-practico_js
 curso practico de javaScript
+https://victormanu20.github.io/curso-practico_js/
 
 ## main.html
 es la pagina principal
